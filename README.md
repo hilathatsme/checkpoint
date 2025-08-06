@@ -1,7 +1,6 @@
 
 Hi! here's my task
 
-```
 
 ## Configure and Run:
 
@@ -19,7 +18,7 @@ run it with ```mongosh``` command
 Create your `.env.local` file and add to it:
 MONGODB_URI="mongodb://localhost:27017/local"
 
-### Run Next.js in development mode
+### Run Next.js in development mode:
 
 ```bash
 npm install
@@ -31,5 +30,7 @@ yarn dev
 pnpm install
 pnpm dev
 ```
+
+
 
 Your app should be up and running on [http://localhost:3000](http://localhost:3000)
