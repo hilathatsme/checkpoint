@@ -9,8 +9,6 @@ type ConnectionStatus = {
   isConnected: boolean;
 };
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const getServerSideProps: GetServerSideProps<
   ConnectionStatus
 > = async () => {
@@ -32,7 +30,7 @@ export default function Home({
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
   return (
     <>
-      <div>You reached our Users page</div>
+      <div>You reached our Users actions page</div>
       <br />
       <div>
         <b>Add a user:</b>
@@ -45,7 +43,7 @@ export default function Home({
       </div>
       <br />
       <div>
-        <a href={'api/allusers'}><b>Click to View Users on all users page</b></a>
+        <a href={'/userlist'}><b>Click to navigate to users page</b></a>
       </div >
 
     </>

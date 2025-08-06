@@ -7,10 +7,11 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         const db = client.db("local");
         const users = await db
             .collection("users")
-            .find({})
+            .find({}, { Password: 0 })
             .sort({ metacritic: -1 })
             .toArray();
         res.json(users);
+        console.log(users)
     } catch (e) {
         console.error(e);
     }
